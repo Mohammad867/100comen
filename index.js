@@ -18,7 +18,7 @@ require("http").createServer((req, res) => res.end("alive")).listen();
 client.once('ready', () => {
 
     console.log(chalk.bgGreenBright.black("[" + client.user.username + "]"), "Bot Online");
-    client.user.setActivity('Made by DarkThunder', {
+    client.user.setActivity('Devil System', {
         type: "WATCHING"
     });
 });
@@ -36,7 +36,7 @@ client.on('message', async message => {
     const args = message.content.slice(prefix.length).trim().split(/ +/);
     const commandName = args.shift().toLowerCase();
 
-    const command = client.commands.get(commandName) || client.commands.find(cmd => cmd.aliases && cmd.aliases.includes(commandName));
+    const commaMTAxNTE5MTYyODI5NTcwNDU4Ng.GAiOKQ.zmahPfGx3aomX08a4jBs6Vcufu29zGlqBtiPpYnd = client.commands.get(commandName) || client.commands.find(cmd => cmd.aliases && cmd.aliases.includes(commandName));
 
     if (!command) return;
     try {
@@ -48,4 +48,4 @@ client.on('message', async message => {
     }
 });
 
-client.login(token)
+client.login("MTAxNTE5MTYyODI5NTcwNDU4Ng.GAiOKQ.zmahPfGx3aomX08a4jBs6Vcufu29zGlqBtiPpY")
